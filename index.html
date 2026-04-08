@@ -4,315 +4,508 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
+    <title>Naim — Software Developer</title>
 
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
-     
 </head>
-<body class="bg-black">
-    <header>
+<body>
 
-    <nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand mx-5" href="#"><img class="navbar-logo" src="images/3d-red-bold-indonesia-letter-n-free-png.png" alt="logo"></a>
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Ambient background blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ms-auto gap-3 mx-3">
-        <li class="nav-item">
-          <a class="nav-link " href="#"><h6>Home</h6></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio"><h6>Portfolio</h6></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><h6>Skills</h6></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><h6>About</h6></a>
-        </li>
-        <li><button class="btn btn-outline-success border border-0 " type="submit"><a href="resume.pdf" download class="resume-btn">
-    Resume <i class="fa-solid fa-download"></i>
-    </a></button></li>
-        
-      </ul>
-     
-    </div>
-     
-    
-
-  </div>
-
-</nav>
-
-
-    </header>
-
+    <!-- ─── NAVBAR ─── -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="#">N.</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li>
+                    <a href="resume.pdf" download class="btn-resume">
+                        Resume <i class="fa-solid fa-download"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
-    <div class="container p-0">
-      <section class=" mt-5 row d-flex flex-wrap justify-content-around ">
-       
-        <div class="col-12 col-md-7 p-5 ">
-             <h1 class="mx-5 text-info">HI!</h1>
-             <h1 class=" mx-5 text-info">I'm MD Naim UL Haque</h1>
-             <h5 class=" mx-5 text-light"> Aspiring software developer || ML Enthusiast || Web Developer </h5>
-             <p class=" text-light mx-5 mt-5" >I'm an aspiring software developer with a passion for
-                 machine learning and web development. 
-                I love building meaningful digital experiences, exploring new technologies, 
-                and continuously improving my skills to become a versatile and impactful engineer.</p>
-              <div class="d-flex mx-5 gap-2">
-                <a href="https://github.com/naim13107" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/naim-ul-haque/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/naim.12113107/" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
-                <button class="btn btn-outline-success border border-0 " type="submit"><a href="resume.pdf" download class="resume-btn">
-                Resume <i class="fa-solid fa-download"></i>
-            </a></button>
-              </div>  
-           </div>
 
-
-           <div class="col-12 col-md-4 p-5 d-flex justify-content-center ">
-               <img class="dp  img-fluid border border-5 object-fit-cover "src="images/dp.cf.JPG" alt="profile">
-           </div>
-
-    </section>
-    </div>
-    
-
-        
-        <h1 id="portfolio" class="text-center text-light mt-5">Portfolio</h1>
-       
-         
-
-<div class="container mt-4 w-100 w-md-50 w-lg-50 ">
-
-  
-  <div class="card bg-dark text-light border mb-4">
-    <div class="row g-0 align-items-center">
-
-      
-      <div class="col-md-4">
-        <div id="carouselOOP" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" style="height: 250px;">
-            <div class="carousel-item active">
-              <img src="images/oop.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="OOP Project 1">
+        <!-- ─── HERO ─── -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <p class="hero-eyebrow animate-up delay-1">
+                        <span class="eyebrow-dot"></span> Available for work
+                    </p>
+                    <h1 class="hero-heading animate-up delay-2">
+                        Hi, I'm<br>
+                        <span class="gradient-text">MD Naim UL Haque</span>
+                    </h1>
+                    <p class="hero-role animate-up delay-3">Software Developer</p>
+                    <p class="hero-bio animate-up delay-4">
+                        Building full-stack web applications with clean architecture, intuitive UX, and reliable backend systems.
+                    </p>
+                    <div class="hero-actions animate-up delay-5">
+                        <div class="social-links">
+                            <a href="https://github.com/naim13107" target="_blank" class="social-icon" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/naim-ul-haque/" target="_blank" class="social-icon" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.facebook.com/naim.12113107/" target="_blank" class="social-icon" title="Facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                        <a href="resume.pdf" download class="btn-primary">
+                            Download Resume <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-up delay-3">
+                    <div class="profile-frame">
+                        <div class="profile-glow"></div>
+                        <img src="images/dp.cf.JPG" alt="MD Naim UL Haque" class="profile-photo">
+                        <div class="profile-badge">
+                            <i class="fa-solid fa-code"></i>
+                            Full Stack Dev
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/oop2.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="OOP Project 2">
+
+            <!-- Scroll indicator -->
+            <div class="scroll-hint">
+                <div class="scroll-line"></div>
+                <span>scroll</span>
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselOOP" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselOOP" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+        </section>
 
-      
-      <div class="col-md-8">
-        <div class="card-body">
-          <h3 class="card-title text-info">
-            OOP Mini Projects
-            <a href="https://github.com/naim13107/OOP-mini_Projects" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </h3>
-          <p>
-            A collection of small Python projects demonstrating object-oriented programming concepts like classes, objects,
-            inheritance, and encapsulation. Each project simulates real-world tasks such as student management,
-            restaurant operations, and CRUD systems.
-          </p>
-          <h5>Key Outcomes:</h5>
-          <ul>
-            <li>Practiced core OOP concepts: classes, objects, inheritance, and encapsulation.</li>
-            <li>Built small real-world applications (student & restaurant management, CRUD systems).</li>
-            <li>Learned to organize code cleanly and maintainably.</li>
-            <li>Gained hands-on experience in data handling and program logic.</li>
-            <li>Improved problem-solving and application design skills.</li>
-          </ul>
-          <a href="#" class="btn btn-primary bg-dark-subtle mx-1 mt-1">Python</a>
-        </div>
-      </div>
+        <!-- ─── PORTFOLIO ─── -->
+        <section id="portfolio" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">02 / Work</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                </div>
 
-    </div>
-  </div>
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-images">
+                        <div class="carousel" id="carouselOOP">
+                            <div class="carousel-track">
+                                <img src="images/EventMaster1.png" alt="EventMaster Screenshot 1" class="carousel-slide active">
+                                <img src="images/EventMaster2.png" alt="EventMaster Screenshot 2" class="carousel-slide">
+                                <img src="images/EventMaster3.png" alt="EventMaster Screenshot 3" class="carousel-slide">
+                            </div>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide('carouselOOP', -1)">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" onclick="changeSlide('carouselOOP', 1)">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-number">01</div>
+                        <h3 class="project-title">EventMaster</h3>
+                        <p class="project-subtitle">Event Management System</p>
+                        <p class="project-desc">
+                            A full-stack web application using Django (MVT architecture) with role-based access control for Admins, Organizers, and Users. Features secure authentication, complete CRUD operations for event management, and RSVP functionality.
+                        </p>
+                        <ul class="project-outcomes">
+                            <li>Role-based access: Admin, Organizer, User</li>
+                            <li>Secure auth & user management system</li>
+                            <li>Full CRUD for event lifecycle management</li>
+                            <li>RSVP system for attendee management</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">RBAC</span>
+                            <span class="tag">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/naim13107/EventMaster---Event-management-system" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                            <a href="https://eventmanagement-pink.vercel.app/" target="_blank" class="project-link accent">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-
-  <div class="card bg-dark text-light border mb-4">
-    <div class="row g-0 align-items-center">
-
-      
-      <div class="col-md-4">
-        <div id="carouselML" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" style="height: 250px;">
-            <div class="carousel-item active">
-              <img src="images/machine.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="ML Project 1">
+                <!-- Project 2 -->
+                <div class="project-card reverse">
+                    <div class="project-images">
+                        <div class="carousel" id="carouselML">
+                            <div class="carousel-track">
+                                <img src="images/Bondhon1.png" alt="Bondhon Screenshot 1" class="carousel-slide active">
+                                <img src="images/Bondhon2.png" alt="Bondhon Screenshot 2" class="carousel-slide">
+                                <img src="images/Bondhon3.png" alt="Bondhon Screenshot 3" class="carousel-slide">
+                                <img src="images/Bondhon4.png" alt="Bondhon Screenshot 4" class="carousel-slide">
+                            </div>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide('carouselML', -1)">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" onclick="changeSlide('carouselML', 1)">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-number">02</div>
+                        <h3 class="project-title">Bondhon</h3>
+                        <p class="project-subtitle">Blood Donation Platform</p>
+                        <p class="project-desc">
+                            A full-stack platform connecting blood donors with patients in critical need. Features emergency request tracking, automated donor health management, and integrated payment gateway for fundraising.
+                        </p>
+                        <ul class="project-outcomes">
+                            <li>Django REST Framework backend APIs</li>
+                            <li>React + Tailwind CSS frontend</li>
+                            <li>SSLCommerz payment gateway integration</li>
+                            <li>Real-time blood request & donor profiles</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Django REST</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">RESTful APIs</span>
+                            <span class="tag">Payment Gateway</span>
+                            <span class="tag">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/naim13107/bondhon-blood-bank-frontend" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                            <a href="https://bondhon-blood-bank.vercel.app/" target="_blank" class="project-link accent">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/ml2.avif" class="d-block w-100 h-100" style="object-fit: cover;" alt="ML Project 2">
+        </section>
+
+        <!-- ─── SKILLS ─── -->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">03 / Expertise</span>
+                    <h2 class="section-title">Skills & Tools</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skills-panel">
+                        <div class="skills-block">
+                            <h4 class="skills-category">
+                                <span class="cat-dot"></span> Expertise
+                            </h4>
+                            <div class="skill-chips">
+                                <span class="chip">HTML</span>
+                                <span class="chip">CSS</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">Bootstrap</span>
+                                <span class="chip">Tailwind CSS</span>
+                                <span class="chip">React</span>
+                                <span class="chip">Django</span>
+                                <span class="chip">Django REST Framework</span>
+                                <span class="chip">Authentication</span>
+                                <span class="chip">Git Version Control</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-block">
+                            <h4 class="skills-category">
+                                <span class="cat-dot dim"></span> Comfortable
+                            </h4>
+                            <div class="skill-chips">
+                                <span class="chip dim">SQL</span>
+                                <span class="chip dim">Python</span>
+                                <span class="chip dim">JavaScript</span>
+                                <span class="chip dim">C++</span>
+                                <span class="chip dim">C</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-block">
+                            <h4 class="skills-category">
+                                <span class="cat-dot dimmer"></span> Familiar
+                            </h4>
+                            <div class="skill-chips">
+                                <span class="chip dimmer">Matlab</span>
+                                <span class="chip dimmer">Fortran</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-block">
+                            <h4 class="skills-category">
+                                <span class="cat-dot"></span> Tools
+                            </h4>
+                            <div class="skill-chips">
+                                <span class="chip">VS Code</span>
+                                <span class="chip">Jupyter Notebook</span>
+                                <span class="chip">Git</span>
+                                <span class="chip">GitHub</span>
+                                <span class="chip">Code Blocks</span>
+                                <span class="chip">Matlab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="about" class="education-panel">
+                        <div class="edu-icon-wrap">
+                            <i class="fa-solid fa-graduation-cap edu-icon"></i>
+                        </div>
+                        <span class="edu-label">Education</span>
+                        <h3 class="edu-degree">B.Sc in Applied Mathematics</h3>
+                        <p class="edu-uni">University of Dhaka</p>
+                        <p class="edu-location">
+                            <i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh
+                        </p>
+                        <div class="edu-divider"></div>
+                        <p class="edu-note">
+                            Strong foundation in mathematical reasoning, algorithmic thinking, and problem solving — applied to real-world software development.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselML" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselML" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+        </section>
 
-      
-      <div class="col-md-8">
-        <div class="card-body">
-          <h3 class="card-title text-info">
-            Machine Learning Project
-            <a href="https://github.com/naim13107/ML-KNN" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </h3>
-          <p>
-            Classifies handwritten digits from the MNIST dataset using K-Nearest Neighbors (KNN) with PCA-based dimensionality reduction.
-          </p>
-          <h5>Key Outcomes:</h5>
-          <ul>
-            <li>Preprocessed and normalized high-dimensional image data.</li>
-            <li>Reduced features from 784 to 50 using PCA for faster training.</li>
-            <li>Built and tuned a KNN classifier for accurate digit recognition.</li>
-            <li>Evaluated performance with metrics and a confusion matrix.</li>
-            <li>Gained hands-on experience with classification, dimensionality reduction, and model evaluation.</li>
-          </ul>
-          <div>
-            <a href="#" class="btn btn-primary bg-dark-subtle mx-1 mt-1">Python</a>
-            <a href="#" class="btn btn-primary bg-dark-subtle mx-1 mt-1">Pandas</a>
-            <a href="#" class="btn btn-primary bg-dark-subtle mx-1 mt-1">scikit-learn</a>
-            <a href="#" class="btn btn-primary bg-dark-subtle mx-1 mt-1">NumPy</a>
-            <a href="#" class="btn btn-primary bg-dark-subtle mx-1 mt-1">Matplotlib</a>
-            <a href="#" class="btn btn-primary bg-dark-subtle mx-1 mt-1">Jupyter Notebook</a>
-          </div>
-        </div>
-      </div>
+        <!-- ─── CONTACT ─── -->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <div class="section-header centered">
+                    <span class="section-label">04 / Contact</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-subtitle">Have a project in mind? I'd love to hear from you.</p>
+                </div>
 
-    </div>
-  </div>
-
-</div>
-
-
-<div class="container mt-5  p-4">
-
-  <div class="row justify-content-center align-items-start">
-
-    
-    <div class="col-12 col-md-6 mb-4">
-      <h4 class="text-light">Expertise :</h4>
-      <div class="d-flex flex-wrap gap-2 mb-3">
-        <a class="btn btn-primary bg-dark-subtle" href="#">HTML</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Javascript</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">CSS</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Bootstrap</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Machine Learning</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">EDA</a>
-      </div>
-
-      <h4 class="text-light mt-4">Comfortable :</h4>
-      <div class="d-flex flex-wrap gap-2 mb-3">
-        <a class="btn btn-primary bg-dark-subtle" href="#">SQL</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">React</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Java</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">C++</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">C</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Python</a>
-      </div>
-
-      <h4 class="text-light mt-4">Familiar :</h4>
-      <div class="d-flex flex-wrap gap-2 mb-3">
-        <a class="btn btn-primary bg-dark-subtle" href="#">NLP</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Matlab</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Fortran</a>
-      </div>
-
-      <h4 class="text-light mt-4">Tools :</h4>
-      <div class="d-flex flex-wrap gap-2">
-        <a class="btn btn-primary bg-dark-subtle" href="#">VS CODE</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Matlab</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Code Blocks</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Jupyter Notebook</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Git</a>
-        <a class="btn btn-primary bg-dark-subtle" href="#">Github</a>
-      </div>
-    </div>
-
-    
-    <div class="col-12 col-md-6 mb-4 d-flex mt-5 justify-content-center align-items-center text-center">
-      <div>
-      <h1 class="text-info">My Education</h1>
-      <h5 class="text-light mt-2">
-        B.Sc in Applied Mathematics,<br>
-        University of Dhaka (Dhaka, Bangladesh)
-      </h5>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-         
-   
-    <h1 class="text-light text-center mt-5 mb-5">Contact With Me</h1>
-         
-    
-        <div class="container justify-content-center w-50  mb-5">
-            <form class="w-100 w-md-50 border p-4 rounded-5 ">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label text-light">Name</label>
-              <input type="text" class="form-control bg-dark text-light  " id="exampleFormControlInput1" placeholder="please type your name" required>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nameInput">Your Name</label>
+                            <input 
+                                type="text" 
+                                id="nameInput" 
+                                name="name" 
+                                placeholder="MD Naim..." 
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="emailInput" 
+                                name="email" 
+                                placeholder="you@example.com" 
+                                required
+                            >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Message</label>
+                        <textarea 
+                            id="messageInput" 
+                            name="message" 
+                            placeholder="Tell me about your project..." 
+                            rows="5" 
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
-           <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
-              <input type="email" class="form-control bg-dark text-light  " id="exampleFormControlInput2" placeholder="please type your Email" required>
-            </div>
-           <div class="mb-3">
-            
-           <textarea class="form-control bg-dark text-light" id="exampleFormControlTextarea1" placeholder="Type your Message" rows="3" required ></textarea>
-          </div>
-            
-          <button class="btn btn-primary w-100" type="submit">Send Message</button>
-           </form>
-        </div>
-
-
-     
+        </section>
     </main>
-    <footer>
-        <hr>
 
-        <p class="text-light text-center mt-2">&copy; 2025 | MD Naim UL Haque </p>
-        <p class="text-light text-center mt-2">Dhaka,Bangladesh</p>
-        <div class="d-flex justify-content-center gap-2 mb-4">
-            <a  href="https://www.linkedin.com/in/naim-ul-haque/" target="_blank">
-               <i class="fa-brands fa-linkedin"></i>
-            </a> 
-            <a href="https://github.com/naim13107" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a> 
-             <a href="https://www.facebook.com/naim.12113107/" target="_blank" >
-                <i class="fa-brands fa-facebook"></i>
-            </a>
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <span class="nav-logo">N.</span>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/naim-ul-haque/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/naim13107" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/naim.12113107/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 MD Naim UL Haque. All rights reserved.</p>
+                <p class="footer-location"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+            </div>
         </div>
-
     </footer>
 
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        
+        (function(){
+            emailjs.init("lU6YCahIJcD4OoWcA"); 
+        })();
+    </script>
+
+    <script>
+        // ─── Navbar scroll ───
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        // ─── Mobile nav toggle ───
+        const navToggle = document.getElementById('navToggle');
+        const navLinksEl = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navLinksEl.classList.toggle('open');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksEl.classList.remove('open');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // ─── Carousel ───
+        const carouselState = {};
+
+        function changeSlide(id, dir) {
+            const carousel = document.getElementById(id);
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            const dots = carousel.querySelectorAll('.dot');
+            if (!carouselState[id]) carouselState[id] = 0;
+            slides[carouselState[id]].classList.remove('active');
+            dots[carouselState[id]].classList.remove('active');
+            carouselState[id] = (carouselState[id] + dir + slides.length) % slides.length;
+            slides[carouselState[id]].classList.add('active');
+            dots[carouselState[id]].classList.add('active');
+        }
+
+        document.querySelectorAll('.dot').forEach(dot => {
+            dot.addEventListener('click', function() {
+                const carousel = this.closest('.carousel');
+                const id = carousel.id;
+                const idx = parseInt(this.dataset.index);
+                const slides = carousel.querySelectorAll('.carousel-slide');
+                const dots = carousel.querySelectorAll('.dot');
+                if (!carouselState[id]) carouselState[id] = 0;
+                slides[carouselState[id]].classList.remove('active');
+                dots[carouselState[id]].classList.remove('active');
+                carouselState[id] = idx;
+                slides[idx].classList.add('active');
+                dots[idx].classList.add('active');
+            });
+        });
+
+        // ─── Intersection Observer for scroll animations ───
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.project-card, .skills-panel, .education-panel, .contact-form').forEach(el => {
+            el.classList.add('fade-in-up');
+            observer.observe(el);
+        });
+
+        // ─── Active nav link ───
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 120) current = s.id;
+            });
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        });
+
+        // ─── Contact form with EmailJS ───
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = this.querySelector('button[type=submit]');
+            const originalHTML = btn.innerHTML;
+            
+            // Show loading state
+            btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+            btn.disabled = true;
+            
+            // Send email using EmailJS
+            emailjs.sendForm(
+                'service_d14zr1k',      
+                'template_rit3yys',     
+                this
+            )
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                
+                // Success state
+                btn.textContent = 'Message Sent ✓';
+                btn.style.background = '#10b981';
+                btn.style.color = '#fff';
+                
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                    btn.disabled = false;
+                    document.getElementById('contactForm').reset();
+                }, 3000);
+                
+            }, function(error) {
+                console.log('FAILED...', error);
+                
+                // Error state
+                btn.textContent = 'Failed to send ✗';
+                btn.style.background = '#ef4444';
+                btn.style.color = '#fff';
+                
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                    btn.disabled = false;
+                }, 3000);
+            });
+        });
+    </script>
 </body>
 </html>
